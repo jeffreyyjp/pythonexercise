@@ -23,3 +23,5 @@ def check_date(datestr):
 print(check_date(first_date) - check_date(second_date))
 duration_time = (check_date(first_date) - check_date(second_date)).days
 print("The duration time is: {}".format(abs(duration_time)))
+
+# Todo
