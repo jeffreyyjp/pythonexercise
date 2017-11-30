@@ -1,9 +1,11 @@
+# encoding: UTF-8
+
 """incremental number
 
 This program needs user to input three integer numbers as start, end and increment. And then it will output a list of numbers. For example: s == 6, e == 26, i == 4, the program will output a list of numbers such as 6, 10, 14, 18, 22, 26.
 """
 
-import os
+import os 
 
 def get_increnumbers(start, end, increment):
     list_numbers = [start]
