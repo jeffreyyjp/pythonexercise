@@ -4,7 +4,7 @@ import fileinput, glob
 
 lang_dict = {}
 lang_files = glob.glob("language_*.js")
-lang_all = "language-all.js"
+output_file = "language-all.js"
 
 def process(line):
     """ Dealing each line and save it to a dict
@@ -18,7 +18,7 @@ def process(line):
 for line in fileinput.input(lang_files):
     process(line)
 
-with open(lang_all, "wb+") as f:
+with open(output_file, "wb+") as f:
     f.write("Config.language = {\n")
     sorted_keys = lang_dict.keys()
     sorted_keys.sort()
