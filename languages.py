@@ -18,7 +18,7 @@ def process(line):
 for line in fileinput.input(lang_files):
     process(line)
 
-with open("lang_all", "wb+") as f:
+with open(lang_all, "wb+") as f:
     f.write("Config.language = {\n")
     sorted_keys = lang_dict.keys()
     sorted_keys.sort()
