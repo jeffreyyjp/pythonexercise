@@ -29,3 +29,6 @@ with open(output_file, "wb+") as f:
         f.write("{0} : {1}".format(key, lang_dict[key]))
         i += 1
     f.write("}")
+
+
+print('hello world')
